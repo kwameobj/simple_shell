@@ -1,5 +1,5 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#ifndef MAIN_H
+#define MAIN_H
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -7,7 +7,6 @@
 #include <sys/wait.h>
 #include <string.h>
 #include <limits.h>
-#include <ncurses.h>
 #define TOKEN_DELIM " \t\r\n\a"
 #define BUFFER_SIZE 1024
 
@@ -56,7 +55,7 @@ void errors(char *name);
  * struct user_command_t - struct that call function based on command
  * @command_name: command name
  * @command_function: function ointer that get called when
- *								the user enter command
+ * the user enter command
 */
 
 typedef struct user_command_t
